@@ -1,0 +1,27 @@
+# specify site authors in this file
+# you can add .yml files for any other global data in this folder
+
+
+- title: Software Development
+  icon: ti-settings
+  text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+
+- title: Software Design
+  icon: ti-ruler-pencil
+  text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+
+- title: Server Management
+  icon: ti-dashboard
+  text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+
+- title: Photography
+  icon: ti-camera
+  text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+
+- title: Consultancy
+  icon: ti-settings
+  text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+
+- title: Cyber Security
+  icon: ti-lock
+  text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.

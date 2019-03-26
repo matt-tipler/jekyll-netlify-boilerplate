@@ -1,0 +1,7 @@
+# specify site authors in this file
+# you can add .yml files for any other global data in this folder
+
+
+- title: Software Development
+  icon: ti-settings
+  text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.

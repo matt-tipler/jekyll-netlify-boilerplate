@@ -2,9 +2,15 @@
 
 - text: Home
   url: /
+- text: Our services
+  url: services
 - text: About
   url: /about
 - text: Contact
   url: /contact
 - text: Blog
   url: /blog
+- text: Work for us
+  url: /recruit
+- text: Our Work
+  url: /our-work

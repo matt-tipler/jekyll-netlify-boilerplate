@@ -13,8 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Jekyll Netlify Boilerplate
-email: your-email@example.com
+company_name: Firebrand
+
+title: Firebrand
+sub-title: <br>Software is<br>our passion
+
+address: The Colour Laboratory, Lelant, Saint Ives, TR26 3HU
+phone-number: 01736 751555
+email: contact@firebrand.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml.

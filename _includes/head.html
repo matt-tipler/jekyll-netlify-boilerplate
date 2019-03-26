@@ -2,9 +2,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.section == "home" %}{{ site.title }}{% else %}{{ page.title | default: site.title }}{% endif %}</title>
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+
+  <!-- CSS -->
+  <link href="/assets/plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="/assets/plugins/owl-carousel/owl.carousel.min.css" rel="stylesheet">
+  <link href="/assets/plugins/owl-carousel/owl.theme.default.min.css" rel="stylesheet">
+  <link href="/assets/plugins/magnific-popup/magnific-popup.min.css" rel="stylesheet"> -->
+  <link href="/assets/css/app.css" rel="stylesheet">
+  <!-- Fonts/Icons -->
+  <link href="/assets/plugins/font-awesome/css/all.css" rel="stylesheet">
+  <link href="/assets/plugins/themify/themify-icons.min.css" rel="stylesheet">
+
+  <!-- <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}"> -->
+  
   {% if jekyll.environment == 'production' and site.analytics %}
     {% include analytics.html %}
   {% endif %}
+
   <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>

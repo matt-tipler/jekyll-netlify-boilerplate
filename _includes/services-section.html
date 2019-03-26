@@ -1,0 +1,16 @@
+		<!-- Services section -->
+		<div class="section no-padding-top">
+			<div class="container">
+				<div class="row col-spacing-40">
+                    <!-- Icon text box 1 -->
+                    {% for item in include.services %}
+					<div class="col-12 col-md-4 icon-5xl">
+						<i class="{{item.icon}} text-dark"></i>
+						<h5 class="font-weight-normal margin-top-20">{{item.title}}</h5>
+						<p>{{item.text}}</p>
+                    </div>
+                    {% endfor %}
+                </div><!-- end row -->
+
+			</div><!-- end container -->
+		</div>

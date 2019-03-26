@@ -2,15 +2,26 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
+  {% include scroll-to-top.html %}
+  {% include home-section.html %}
 
-  {% include page-intro.html %}
+  {% include about-section.html
+    about-title = "Who are "
+    about-text = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+    about-link = "/about"
+    about-link-text = "Learn more"
+  %}
+  {% include services-section.html services=site.data.services %}
+  {% include portfolio.html %}
+
+
+
 
   {{ content }}
 
   <section>
 
-    <h3>Recent posts from the blog</h3>
+    <h3>Recent posts from {{ site.title }}</h3>
 
     <ul>
       {% for post in site.posts limit:3 %}
