@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Welcome......
+about-text: this is the about firebrand 
 permalink: /
 section: home
 intro_paragraph: >
