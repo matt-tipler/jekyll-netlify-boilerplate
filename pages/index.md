@@ -1,7 +1,8 @@
 ---
 layout: home
 title: Welcome......
-about-text: this is the about firebrand 
+about-title: Who are Firebrand
+about-text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 permalink: /
 section: home
 intro_paragraph: >
