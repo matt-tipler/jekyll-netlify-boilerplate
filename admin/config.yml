@@ -53,7 +53,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "team"
     label: "Team Members"
     folder: "team"
-    sort: "title:asc"
+    sort: "name:asc"
     create: true
     slug: "{{slug}}"
     fields:
