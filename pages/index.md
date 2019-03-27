@@ -6,6 +6,9 @@ about-text: >
     sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 about-link: /about
 about-link-text: Learn more
+team-title: Meet Our Team
+team-text: >
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 
 permalink: /
 section: home
