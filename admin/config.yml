@@ -61,3 +61,4 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "name", name: "name", widget: "string"}
       - {label: "Role", name: "role", widget: "string"}
       - {label: "image", name: "image", widget: "image"}
+      - {label: "Permalink", name: "permalink", widget: "hidden" }
