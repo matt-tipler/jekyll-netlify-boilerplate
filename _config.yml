@@ -66,6 +66,9 @@ defaults:
 # Build settings
 markdown: kramdown
 
+collections:
+  team:
+
 # Kramdown options
 kramdown:
   # Prevent IDs from being added to h1-h6 tags

@@ -48,3 +48,16 @@ collections: # A list of collections the CMS should be able to edit
       # - {label: "Section", name: "section", widget: "hidden", default: "{{name}}"}
       # - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       # - {label: "Body", name: "body", widget: "markdown", required: false}
+
+    # team members
+  - name: "team"
+    label: "Team Members"
+    folder: "team"
+    sort: "title:asc"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+      - {label: "name", name: "name", widget: "string"}
+      - {label: "Role", name: "role", widget: "string"}
+      - {label: "image", name: "image", widget: "image"}
