@@ -57,6 +57,11 @@ defaults:
     values:
       layout: "post" # set the correct default template for a post
       section: "post" # set the root section name
+  - 
+    scope:
+      path: ""
+    values:
+      layout: "default"
 
 # Build settings
 markdown: kramdown
