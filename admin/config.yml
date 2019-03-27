@@ -52,9 +52,10 @@ collections: # A list of collections the CMS should be able to edit
     # team members
   - name: "team"
     label: "Team Members"
-    folder: "team"
+    folder: "_team"
     sort: "name:asc"
     create: true
+    identifier_field: name
     slug: "{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
