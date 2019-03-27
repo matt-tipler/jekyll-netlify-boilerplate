@@ -5,28 +5,8 @@ layout: default
   {% include scroll-to-top.html %}
   {% include home-section.html %}
 
-  {% include about-section.html
-    about-title = "Who are "
-    about-text = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-    about-link = "/about"
-    about-link-text = "Learn more"
-  %}
+  {% include about-section.html %}
   {% include services-section.html services=site.data.services %}
   {% include portfolio.html %}
-  {% include team-section.html team=site.team %}
 
   {{ content }}
-
-  <section>
-
-    <h3>Recent posts from {{ site.title }}</h3>
-
-    <ul>
-      {% for post in site.posts limit:3 %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-
-  </section>

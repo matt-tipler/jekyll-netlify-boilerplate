@@ -39,7 +39,7 @@ collections: # A list of collections the CMS should be able to edit
     slug: "{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-      # - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "About section text", name: "about-text", widget: "markdown", required: false}
       - {label: "About section title", name: "about-title", widget: "string", required: false}
       - {label: "About link", name: "about-link", widget: "string", required: false}
@@ -65,3 +65,22 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Role", name: "role", widget: "string"}
       - {label: "image", name: "image", widget: "image"}
       - {label: "Permalink", name: "permalink", widget: "hidden" }
+
+    # Projects
+  - name: "projects"
+    label: "Projects"
+    folder: "_projects"
+    sort: "project-name:asc"
+    create: true
+    identifier_field: name
+    slug: "{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
+      - { label: "Project name", name: "project-name", widget: "string" }
+      - { label: "Category", 
+          name: "category", 
+          widget: "select",
+          options: ["development", "design", "server-management", "SEO", "Consultancy"]}
+      - { label: "Body", name: "body", widget: "markdown", required: false }
+      - { label: "Project Image", name: "project-image", widget: "image" }
+      - { label: "Permalink", name: "permalink", widget: "hidden" }

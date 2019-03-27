@@ -4,8 +4,8 @@
   url: /
 - text: Our services
   url: services
-- text: About
-  url: /about
+# - text: About
+#   url: /about
 - text: Contact
   url: /contact
 - text: Blog
@@ -14,3 +14,5 @@
   url: /recruit
 - text: Our Work
   url: /our-work
+- text: Our Team
+  url: /team
