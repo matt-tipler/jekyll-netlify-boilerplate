@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The most recent post so far
-author: matt
+author: Matt
 date: '2018-07-19 10:07:32'
 intro_paragraph: ''
 categories: design

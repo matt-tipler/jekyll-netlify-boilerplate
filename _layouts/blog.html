@@ -1,33 +1,41 @@
 ---
 layout: default
 ---
-
-<h2>{{ page.title }}</h2>
-
-{% include page-intro.html %}
+<div class="section-lg">
+    <div class="container">
+      <h1 class="font-weight-normal">{{ page.title }}</span></h1>
+      <h4 class="font-weight-thin">{{ page.intro_paragraph }}</h4>
+    </div><!-- end container -->
+</div>
 
 {{ content }}
 
-<section>
-
-  <h3>Posts</h3>
-
-  <ul>
-    {% for post in site.posts %}
-    {% assign author = site.data.authors[post.author] %}
-      <li>
-        <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-        <time datetime="{{ post.date }}">
-          <small>
-            <strong>{{ post.date | date_to_string }}</strong>
-            {% if author %}
-              by {{ author.name }}
+<!-- Blog Posts -->
+<div class="section">
+    <div class="container">
+      <div class="blog-masonry blog-column-3"><!-- 'blog-column-1' to 'blog-column-6' -->
+      {% for post in site.posts %}
+      {% assign author = site.data.authors[post.author] %}
+        <!-- Blog Post box -->
+        <div class="blog-post-box">
+          <div class="blog-post-img">
+            <a href="{{post.url}}">
+              <img src="{{post.image}}" alt="">
+            </a>
+          </div>
+          <div class="blog-post-content">
+            <div class="blog-post-title margin-bottom-10">
+              <h5><a href="{{post.url}}">{{post.title}}</a></h5>
+              <span>{{post.date | date: "%A, %B %d, %Y" }}</span>
+            </div>
+            {% if post.intro_paragraph %}
+            <p>{{post.intro_paragraph}}</p>
             {% endif %}
-          </small>
-        </time>
-        {{ post.excerpt | strip_newlines | truncate: 180 }}
-      </li>
-    {% endfor %}
-  </ul>
-
-</section>
+            <a class="text-btn margin-top-20" href="{{post.url}}">Read More</a>
+          </div>
+        </div>
+      <!-- end Blog Posts -->
+      {% endfor %}
+</div><!-- end blog-masonry -->
+</div><!-- end container -->
+</div>
