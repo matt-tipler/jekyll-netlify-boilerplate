@@ -4,35 +4,32 @@
                     <div class="section-title">
                         <div class="row align-items-end">
                             <div class="col-6">
-                                <h6 class="heading-uppercase">Newsfeed</h6>
-                                <h2>Latest Blog Posts</h2>
+                                <h2>Our Latest Posts</h2>
                             </div>
                             <div class="col-6 text-right">
-                                <a class="text-btn-3" href="#">Read All Posts</a>
+                                <a class="text-btn-3" href="/blog">Read All Posts</a>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <!-- Blog post 1 -->
+                        {% for post in include.posts limit:2 %}
+                        <!-- Blog post -->
                         <div class="col-12 col-md-6">
-                            <a href="#">
-                                <img src="../assets/images/col-2.jpg" alt="">
-                            </a>
+                            <div class="hoverbox-9">
+                                <a href="{{post.url}}">
+                                    <img src="../assets/images/{{ post.image }}" alt="">
+                                    <div class="content">
+                                        <span class="heading-uppercase no-margin">{{post.categories}}</span>
+                                    </div>
+                                </a>
+                            </div>
+
                             <div class="padding-30">
-                                <h5 class="font-weight-normal"><a href="#">Blog Post with Image</a></h5>
-                                <span>Jan 03, 2018</span>
+                                <h5 class="font-weight-normal"><a href="{{post.url}}">{{ post.title}}</a></h5>
+                                <span>{{ post.date | date: "%A, %B %d, %Y"}}</span>
                             </div>
                         </div>
-                        <!-- Blog post 2 -->
-                        <div class="col-12 col-md-6">
-                            <a href="#">
-                                <img src="../assets/images/col-2.jpg" alt="">
-                            </a>
-                            <div class="padding-30">
-                                <h5 class="font-weight-normal"><a href="#">Blog Post with Image</a></h5>
-                                <span>Jan 03, 2018</span>
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div><!-- end row -->
                 </div><!-- end container -->
             </div>
