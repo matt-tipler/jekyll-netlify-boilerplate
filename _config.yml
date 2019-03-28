@@ -18,8 +18,13 @@ title: Firebrand
 sub-title: <br>Software is<br>our passion
 
 address: The Colour Laboratory, Lelant, Saint Ives, TR26 3HU
-phone-number: 01736 751555
+phone-number: 01736 751554
+mobile-number: 07894 692391
 email: contact@firebrand.com
+
+regional-address: building 22/23, Bond's Mill, Stonehouse, GL10 3RF
+regional-phone-number: "01736 751890"
+
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml.
@@ -68,6 +73,7 @@ markdown: kramdown
 
 collections:
   team:
+  projects:
 
 # Kramdown options
 kramdown:

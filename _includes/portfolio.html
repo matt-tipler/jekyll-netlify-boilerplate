@@ -8,103 +8,33 @@
 				<div class="filter filter-style-4 text-center margin-bottom-50">
 					<ul>
 						<li class="active" data-filter="*">All</li>
-						{% for item in include.portfolio %}
-						<li data-filter=".item.category-filter">item.category-text</li>
+
+						{% assign categorys = include.projects | map: 'category' | uniq %}
+						{% for item in categorys %}
+							<li data-filter=".{{item}}">{{item}}</li>
 						{% endfor%}
 					</ul>
 				</div>
+
 				<!-- end Portfolio filter -->
 				<div class="portfolio-wrapper column-3 spacing-20 hover-style-1">
-					<!-- Portfolio box 1 -->
-					<div class="portfolio-item category-1">
+					{% for item in include.projects %}
+					<!-- Portfolio box -->
+					<div class="portfolio-item {{item.category}}">
 						<div class="portfolio-box">
 							<div class="portfolio-img">
-								<img src="../assets/images/col-3-tall.jpg" alt="">
+								<img src="{{item.project-image}}" alt="{{item.project-name}} | {{item.category}}">
 							</div>
 							<a href="#"></a><!-- Portfolio Single link -->
 							<div class="portfolio-title">
 								<div>
-									<h5 class="font-weight-normal">Project Title</h5>
-									<span>Category</span>
+									<h5 class="font-weight-normal">{{item.project-name}}</h5>
+									<span>{{item.category}}</span>
 								</div>
 							</div>
 						</div>
 					</div>
-					<!-- Portfolio box 2 -->
-					<div class="portfolio-item category-2">
-						<div class="portfolio-box">
-							<div class="portfolio-img">
-								<img src="../assets/images/col-3.jpg" alt="">
-							</div>
-							<a href="#"></a><!-- Portfolio Single link -->
-							<div class="portfolio-title">
-								<div>
-									<h5 class="font-weight-normal">Project Title</h5>
-									<span>Category</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Portfolio box 3 -->
-					<div class="portfolio-item category-3">
-						<div class="portfolio-box">
-							<div class="portfolio-img">
-								<img src="../assets/images/col-3-square.jpg" alt="">
-							</div>
-							<a href="#"></a><!-- Portfolio Single link -->
-							<div class="portfolio-title">
-								<div>
-									<h5 class="font-weight-normal">Project Title</h5>
-									<span>Category</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Portfolio box 4 -->
-					<div class="portfolio-item category-1">
-						<div class="portfolio-box">
-							<div class="portfolio-img">
-								<img src="../assets/images/col-3-tall.jpg" alt="">
-							</div>
-							<a href="#"></a><!-- Portfolio Single link -->
-							<div class="portfolio-title">
-								<div>
-									<h5 class="font-weight-normal">Project Title</h5>
-									<span>Category</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Portfolio box 5 -->
-					<div class="portfolio-item category-2">
-						<div class="portfolio-box">
-							<div class="portfolio-img">
-								<img src="../assets/images/col-3-square.jpg" alt="">
-							</div>
-							<a href="#"></a><!-- Portfolio Single link -->
-							<div class="portfolio-title">
-								<div>
-									<h5 class="font-weight-normal">Project Title</h5>
-									<span>Category</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Portfolio box 6 -->
-					<div class="portfolio-item category-3">
-						<div class="portfolio-box">
-							<div class="portfolio-img">
-								<img src="../assets/images/col-3.jpg" alt="">
-							</div>
-							<a href="#"></a><!-- Portfolio Single link -->
-							<div class="portfolio-title">
-								<div>
-									<h5 class="font-weight-normal">Project Title</h5>
-									<span>Category</span>
-								</div>
-							</div>
-						</div>
-					</div>
+					{% endfor%}
 				</div><!-- end portfolio-wrapper-->
 			</div><!-- end container -->
 		</div>
