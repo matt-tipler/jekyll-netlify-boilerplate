@@ -81,7 +81,24 @@ kramdown:
   auto_ids: false
 
 # Include in processing (e.g. Netlify directives)
-# Uncomment before use
+
+plugins:
+  - jekyll-imagemagick
+  - jekyll-minimagick
+
+mini_magick:
+  thumbnail:
+    source: assets/images/
+    destination: assets/images/resize/thumbnail
+    resize: "100x100"
+  blogcrop:
+    source: assets/images/
+    destination: assets/images/resize/blog-crop
+    resize: "550x367^"
+    gravity: "center"
+    extent: "550x367"
+    # crop: "550x367+0+0"
+
 
 #include:
 #  - _redirects
