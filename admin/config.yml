@@ -85,6 +85,9 @@ collections: # A list of collections the CMS should be able to edit
     create: true
     identifier_field: project-name
     slug: "{{slug}}"
+    media_library:
+      config:
+        multiple: true
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "project" }
       - { label: "Project name", name: "project-name", widget: "string" }
@@ -98,6 +101,6 @@ collections: # A list of collections the CMS should be able to edit
           widget: "select",
           options: ["development", "design", "server-management", "SEO", "Consultancy"]}
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Project Image", name: "project-image", widget: "image", media_library: "config: multiple: true"}
+      - { label: "Project Image", name: "project-image", widget: "image"}
       - { label: "Permalink", name: "permalink", widget: "hidden" }
 
