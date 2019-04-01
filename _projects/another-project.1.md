@@ -11,6 +11,10 @@ project-image: /assets/images/live-chat-alt-blue-online.png
 project-image-2: /assets/images/col-2-square.jpg
 project-image-3: /assets/images/col-2-square.jpg
 project-image-4: /assets/images/col-2-square.jpg
+galleryImages:
+  - /assets/images/spring-lake.jpg
+  - /assets/images/team-main.jpg
+  - /assets/images/our-building.jpg
 ---
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
 Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Integer tincidunt.
