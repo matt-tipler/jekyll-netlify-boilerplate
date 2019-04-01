@@ -132,6 +132,11 @@ collections: # A list of collections the CMS should be able to edit
             multiple: true
 
       - label: "Gallery"
-        name: "galleryImages"
+        name: "gallery"
         widget: "list"
-        field: {label: Image, name: image, widget: image}
+        fields: 
+          - label: Images
+            name: galleryImages
+            widget: list
+            fields:
+              - { label: Image, name: image, widget: image }
