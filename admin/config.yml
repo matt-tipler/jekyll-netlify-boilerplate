@@ -81,19 +81,23 @@ collections: # A list of collections the CMS should be able to edit
   - name: "job"
     label: "Post Job Vacancy"
     folder: "_jobs"
-    sort: "name:asc"
+    sort: "closing-date:asc"
     create: true
-    identifier_field: name
+    identifier_field: title
     slug: "{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
       - {label: "Job Title", name: "title", widget: "string"}
       - {label: "Role", name: "role", widget: "string"}
-      - {label: "Requirments", name: "requirments", widget: "list"}
       - {label: "Details", name: "details", widget: "text"}
       - {label: "How to apply", name: "how-to-apply", widget: "text"}
       - {label: "Closing date", name: "closing-date", widget: "datetime", format: "YYYY-MM-DD HH:MM:SS", required: false}
       - {label: "Permalink", name: "permalink", widget: "hidden" }
+      - label: Requirments
+        name: requirments
+        widget: list
+        fields:
+          - { label: Image, name: image, widget: image }
 
     # Projects
   - name: "projects"
