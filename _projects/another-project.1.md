@@ -1,13 +1,15 @@
 ---
 layout: project
 project-name: another project
-category: development
 date: '2018-07-19 10:07:32'
-industry: "example"
-client: "Joe Blow Widgets"
-service: "Software dev, SEO Design"
-project-link: "www.link.com"
+industry: example
+client: Joe Blow Widgets
+service: 'Software dev, SEO Design'
+project-link: www.link.com
+category: development
 project-image: /assets/images/col-2-square.jpg
+project-image-2: /assets/images/col-2-square.jpg
+project-image 3: /assets/images/col-2-square.jpg
 ---
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
 Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Integer tincidunt.
