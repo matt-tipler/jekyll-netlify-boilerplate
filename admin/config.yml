@@ -102,7 +102,6 @@ collections: # A list of collections the CMS should be able to edit
 
       - label: "Project Image main"
         name: "project-image"
-        folder: "projects"
         widget: "image"
         media_library:
           config:
@@ -132,10 +131,7 @@ collections: # A list of collections the CMS should be able to edit
           config:
             multiple: true
 
-  - name: gallery
-    label: "Gallery Image" # Used in the UI, ie.: "New Post"
-    folder: "site/content/gallery" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Gallery Image", name: "image", widget: "image"}
+  - label: "Gallery"
+    name: "galleryImages"
+    widget: "list"
+    field: {label: Image, name: image, widget: image}
