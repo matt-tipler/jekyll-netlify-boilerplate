@@ -57,18 +57,23 @@ layout: default
 			<div class="container">
 				<div class="row">
           {% if page.project-image %}
-					<div class="col-12">
-						<img src="{{ page.project-image }}" alt="">
+					<div class="col-12 col-md-6">
+						<img class="img-responsive" src="{{ page.project-image }}" alt="{{page.title}} image">
 					</div>
           {% endif %}
           {% if page.project-image-2 %}
 					<div class="col-12 col-md-6">
-						<img src="{{ page.project-image-2 }}" alt="">
+						<img src="{{ page.project-image-2 }}" alt="{{page.title}} image 2">
 					</div>
           {% endif %}
           {% if page.project-image-3 %}
 					<div class="col-12 col-md-6">
-						<img src="{{ page.project-image-3 }}" alt="">
+						<img src="{{ page.project-image-3 }}" alt="{{page.title}} image 3">
+					</div>
+          {% endif %}
+          {% if page.project-image-4 %}
+					<div class="col-12 col-md-6">
+						<img src="{{ page.project-image-4 }}" alt="{{page.title}} image 4">
 					</div>
           {% endif %}
 				</div><!-- end row -->

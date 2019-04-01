@@ -93,6 +93,10 @@ mini_magick:
     resize: "550x367^"
     gravity: "center"
     extent: "550x367"
+  projectcrop:
+    source: assets/images/
+    destination: assets/images/resize/project-crop
+    resize: "1100^"
 
 
 #include:

@@ -105,6 +105,7 @@ collections: # A list of collections the CMS should be able to edit
 
       - label: "Project Image main"
         name: "project-image"
+        folder: "projects"
         widget: "image"
         media_library:
           config:
@@ -119,7 +120,15 @@ collections: # A list of collections the CMS should be able to edit
             multiple: true
 
       - label: "Project Image 3"
-        name: "project-image 3"
+        name: "project-image-3"
+        widget: "image"
+        required: false
+        media_library:
+          config:
+            multiple: true
+
+      - label: "Project Image 4"
+        name: "project-image-4"
         widget: "image"
         required: false
         media_library:
