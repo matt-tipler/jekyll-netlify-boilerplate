@@ -1,12 +1,12 @@
 ---
 layout: project
 project-name: another project
-category: development
 date: '2018-07-19 10:07:32'
-industry: "example"
-client: "Joe Blow Widgets"
-service: "Software dev, SEO Design"
-project-link: "www.link.com"
+industry: example
+client: Joe Blow Widgets
+service: 'Software dev, SEO Design'
+project-link: www.link.com
+category: development
 project-image: /assets/images/col-2-square.jpg
 project-image-2: /assets/images/col-2-square.jpg
 project-image-3: /assets/images/col-2-square.jpg
