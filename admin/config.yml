@@ -104,3 +104,10 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Project Image", name: "project-image", widget: "image"}
       - { label: "Permalink", name: "permalink", widget: "hidden" }
 
+      - label: "Featured Image"
+        name: "thumbnail"
+        widget: "image"
+        default: "/uploads/chocolate-dogecoin.jpg"
+        media_library:
+          config:
+            multiple: true
