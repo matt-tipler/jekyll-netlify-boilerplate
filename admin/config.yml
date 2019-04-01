@@ -88,7 +88,7 @@ collections: # A list of collections the CMS should be able to edit
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "project" }
       - { label: "Project name", name: "project-name", widget: "string" }
-      - {label: "Project Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:SS"}
+      - { label: "Project Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:SS"}
       - { label: "Industry", name: "industry", widget: "string" }
       - { label: "Client", name: "client", widget: "string" }
       - { label: "Service", name: "service", widget: "string", required: false}
@@ -98,6 +98,6 @@ collections: # A list of collections the CMS should be able to edit
           widget: "select",
           options: ["development", "design", "server-management", "SEO", "Consultancy"]}
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Project Image", name: "project-image", widget: "image", allow_multiple: true }
+      - { label: "Project Image", name: "project-image", widget: "image", media_library: "config: multiple: true"}
       - { label: "Permalink", name: "permalink", widget: "hidden" }
 
