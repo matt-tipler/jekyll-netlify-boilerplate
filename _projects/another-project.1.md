@@ -7,7 +7,7 @@ client: Joe Blow Widgets
 service: 'Software dev, SEO Design'
 project-link: www.link.com
 category: development
-project-image: /assets/images/col-2-square.jpg
+project-image: /assets/images/live-chat-alt-blue-online.png
 project-image-2: /assets/images/col-2-square.jpg
 project-image-3: /assets/images/col-2-square.jpg
 project-image-4: /assets/images/col-2-square.jpg
