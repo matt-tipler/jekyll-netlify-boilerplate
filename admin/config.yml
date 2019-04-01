@@ -101,13 +101,27 @@ collections: # A list of collections the CMS should be able to edit
           widget: "select",
           options: ["development", "design", "server-management", "SEO", "Consultancy"]}
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Project Image", name: "project-image", widget: "image"}
       - { label: "Permalink", name: "permalink", widget: "hidden" }
 
-      - label: "Featured Image"
-        name: "thumbnail"
+      - label: "Project Image main"
+        name: "project-image"
         widget: "image"
-        default: "/uploads/chocolate-dogecoin.jpg"
+        media_library:
+          config:
+            multiple: true
+        
+      - label: "Project Image 2"
+        name: "project-image-2"
+        widget: "image"
+        required: false
+        media_library:
+          config:
+            multiple: true
+
+      - label: "Project Image 3"
+        name: "project-image 3"
+        widget: "image"
+        required: false
         media_library:
           config:
             multiple: true

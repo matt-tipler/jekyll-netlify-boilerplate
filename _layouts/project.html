@@ -56,15 +56,21 @@ layout: default
   <div class="section no-padding-top">
 			<div class="container">
 				<div class="row">
+          {% if page.project-image %}
 					<div class="col-12">
-						<img src="/assets/images/col-1.jpg" alt="">
+						<img src="{{ page.project-image }}" alt="">
 					</div>
+          {% endif %}
+          {% if page.project-image-2 %}
 					<div class="col-12 col-md-6">
-						<img src="/assets/images/col-2.jpg" alt="">
+						<img src="{{ page.project-image-2 }}" alt="">
 					</div>
+          {% endif %}
+          {% if page.project-image-3 %}
 					<div class="col-12 col-md-6">
-						<img src="/assets/images/col-2.jpg" alt="">
+						<img src="{{ page.project-image-3 }}" alt="">
 					</div>
+          {% endif %}
 				</div><!-- end row -->
 			</div><!-- end container -->
   </div>
