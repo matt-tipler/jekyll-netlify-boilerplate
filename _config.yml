@@ -68,6 +68,7 @@ markdown: kramdown
 
 collections:
   team:
+  job:
   projects:
     output: true
 

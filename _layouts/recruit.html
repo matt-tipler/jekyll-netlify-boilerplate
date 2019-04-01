@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<div class="section-lg">
+    <div class="container">
+        <h1 class="font-weight-normal">{{ page.title }}</span></h1>
+        <h4 class="font-weight-thin">{{ page.intro_paragraph }}</h4>
+    </div><!-- end container -->
+</div>
+
+<div class="section-lg bg-grey-lightest no-padding-top">
+        <div class="container">
+            <div class="row col-spacing-40">
+                {% for job in site.jobs %}
+                <div class="col-12 col-lg-6">
+                    <div class="bg-white border-radius padding-30 box-shadow-with-hover">
+                        <h5 class="font-weight-normal">{{job.title }}</h5>
+                        <div class="divider-width-30px">
+                            <hr class="bg-black-05">
+                        </div>
+                        {{job.description}}
+                        <div class="margin-top-20">
+                            <h6 class="heading-uppercase">Requirements:</h6>
+                            <ul class="list-dash">
+                                {% for requirement in job.requirements %}
+                                    <li>{{requirement}}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <div class="text-right margin-top-20">
+                            <a class="text-btn button-font-2" href="#">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div>

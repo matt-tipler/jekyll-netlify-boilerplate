@@ -77,6 +77,24 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "image", name: "image", widget: "image"}
       - {label: "Permalink", name: "permalink", widget: "hidden" }
 
+    # jobs
+  - name: "job"
+    label: "Post Job Vacancy"
+    folder: "_jobs"
+    sort: "name:asc"
+    create: true
+    identifier_field: name
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+      - {label: "Job Title", name: "title", widget: "string"}
+      - {label: "Role", name: "role", widget: "string"}
+      - {label: "Requirments", name: "requirments", widget: "list"}
+      - {label: "Details", name: "details", widget: "text"}
+      - {label: "How to apply", name: "how-to-apply", widget: "text"}
+      - {label: "Closing date", name: "closing-date", widget: "datetime", format: "YYYY-MM-DD HH:MM:SS", required: false}
+      - {label: "Permalink", name: "permalink", widget: "hidden" }
+
     # Projects
   - name: "projects"
     label: "Projects"
@@ -99,7 +117,6 @@ collections: # A list of collections the CMS should be able to edit
           options: ["development", "design", "server-management", "SEO", "Consultancy"]}
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Permalink", name: "permalink", widget: "hidden" }
-
       - label: "Gallery"
         name: "gallery"
         widget: "object"

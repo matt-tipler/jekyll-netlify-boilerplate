@@ -23,7 +23,10 @@
 					<div class="portfolio-item {{item.category}}">
 						<div class="portfolio-box">
 							<div class="portfolio-img">
-								<img src="{{item.project-image}}" alt="{{item.project-name}} | {{item.category}}">
+								{% for image in item.gallery.galleryImages limit:1 %}
+									{% assign image-src = image.image | split: "/" %}
+									<img src="/assets/images/resize/project-thumbnail/{{ image-src.last }}" alt="{{project.title}}">
+								{% endfor %}
 							</div>
 							<a href="{{item.url}}"></a><!-- Portfolio Single link -->
 							<div class="portfolio-title">

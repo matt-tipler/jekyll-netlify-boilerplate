@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-
-<h2>{{ page.title }}</h2>
-
-{% include page-intro.html %}
-
-{{ content }}
+<div class="section-lg">
+        <div class="container">
+          <h1 class="font-weight-normal">{{ page.title }}</span></h1>
+          <h4 class="font-weight-thin">{{ page.intro_paragraph }}</h4>
+        </div><!-- end container -->
+</div>
 
 {% include contact-form.html %}
