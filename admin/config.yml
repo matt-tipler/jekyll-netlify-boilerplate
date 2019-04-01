@@ -86,12 +86,18 @@ collections: # A list of collections the CMS should be able to edit
     identifier_field: project-name
     slug: "{{slug}}"
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "project" }
       - { label: "Project name", name: "project-name", widget: "string" }
+      - {label: "Project Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:SS"}
+      - { label: "Industry", name: "industry", widget: "string" }
+      - { label: "Client", name: "client", widget: "string" }
+      - { label: "Service", name: "service", widget: "string", required: false}
+      - { label: "Project Link", name: "project-link", widget: "string", required: false}
       - { label: "Category", 
           name: "category", 
           widget: "select",
           options: ["development", "design", "server-management", "SEO", "Consultancy"]}
-      - { label: "Body", name: "body", widget: "markdown", required: false }
-      - { label: "Project Image", name: "project-image", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Project Image", name: "project-image", widget: "image", allow_multiple: true }
       - { label: "Permalink", name: "permalink", widget: "hidden" }
+

@@ -1,0 +1,76 @@
+---
+layout: default
+---
+
+<div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-3">
+            
+          {% if page.category %}
+          <div class="margin-bottom-20">
+            <h6 class="heading-uppercase no-margin">Category</h6>
+            <span>{{page.category}}</span>
+          </div>
+          {% endif %}
+          {% if page.date %}
+          <div class="margin-bottom-20">
+            <h6 class="heading-uppercase no-margin">Date</h6>
+            <span>{{page.date | date: " %B %Y" }}</span>
+          </div>
+          {% endif %}
+          {% if page.industry %}
+          <div>
+            <h6 class="heading-uppercase no-margin">Industry</h6>
+            <span>{{page.industry}}</span>
+          </div>
+          {% endif %}
+        </div>
+        <div class="col-12 col-lg-6">
+            {{ content }}
+        </div>
+
+        <div class="col-12 col-lg-3">  
+          {% if page.client %}
+          <div class="margin-bottom-20">
+            <h6 class="heading-uppercase no-margin">Client</h6>
+            <span>{{page.client}}</span>
+          </div>
+          {% endif %}
+          {% if page.service %}
+          <div class="margin-bottom-20">
+            <h6 class="heading-uppercase no-margin">Service</h6>
+            <span>{{page.service}}</span>
+          </div>
+          {% endif %}
+          {% if page.project-link %}
+          <div>
+            <h6 class="heading-uppercase no-margin">Project Link</h6>
+            <a class="hyperlink-5" href="#">{{page.project-link}}</a>
+          </div>
+          {% endif %}
+        </div>
+      </div><!-- end row -->
+    </div><!-- end container -->
+  </div>
+  <div class="section no-padding-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<img src="/assets/images/col-1.jpg" alt="">
+					</div>
+					<div class="col-12 col-md-6">
+						<img src="/assets/images/col-2.jpg" alt="">
+					</div>
+					<div class="col-12 col-md-6">
+						<img src="/assets/images/col-2.jpg" alt="">
+					</div>
+				</div><!-- end row -->
+			</div><!-- end container -->
+  </div>
+
+
+
+</div><!-- end blog-masonry -->
+</div><!-- end container -->
+</div>

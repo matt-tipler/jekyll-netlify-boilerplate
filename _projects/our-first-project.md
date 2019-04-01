@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 project-name: our first project
 category: server-management
 project-image: /assets/images/col-4-tall.jpg

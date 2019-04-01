@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 project-name: yet another project
 category: design
 project-image: /assets/images/col-3.jpg
