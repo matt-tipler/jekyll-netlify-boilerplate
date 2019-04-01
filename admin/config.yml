@@ -100,40 +100,9 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Permalink", name: "permalink", widget: "hidden" }
 
-      - label: "Project Image main"
-        name: "project-image"
-        widget: "image"
-        media_library:
-          config:
-            multiple: true
-        
-      - label: "Project Image 2"
-        name: "project-image-2"
-        widget: "image"
-        required: false
-        media_library:
-          config:
-            multiple: true
-
-      - label: "Project Image 3"
-        name: "project-image-3"
-        widget: "image"
-        required: false
-        media_library:
-          config:
-            multiple: true
-
-      - label: "Project Image 4"
-        name: "project-image-4"
-        widget: "image"
-        required: false
-        media_library:
-          config:
-            multiple: true
-
       - label: "Gallery"
         name: "gallery"
-        widget: "list"
+        widget: "object"
         fields: 
           - label: Images
             name: galleryImages
