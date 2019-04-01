@@ -20,7 +20,10 @@ layout: default
         <div class="blog-post-box">
           <div class="blog-post-img">
             <a href="{{project.url}}">
-              <img src="{{project.project-image}}" alt="">
+              {% for image in project.gallery.galleryImages limit:1 %}
+                {% assign image-src = image.image | split: "/" %}
+                <img src="/assets/images/resize/project-thumbnail/{{ image-src.last }}" alt="{{project.title}}">
+              {% endfor %}
             </a>
           </div>
           <div class="blog-post-content">

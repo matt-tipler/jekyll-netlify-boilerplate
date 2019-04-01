@@ -96,7 +96,11 @@ mini_magick:
   projectcrop:
     source: assets/images/
     destination: assets/images/resize/project-crop
-    resize: "1100^"
+    resize: "1100"
+  projectthumbnail:
+    source: assets/images/
+    destination: assets/images/resize/project-thumbnail
+    resize: "400"
 
 
 #include:

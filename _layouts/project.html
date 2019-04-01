@@ -49,9 +49,6 @@ layout: default
             <a class="hyperlink-5" href="#">{{page.project-link}}</a>
           </div>
           {% endif %}
-          {% for image in page.galleryImages %}
-          <img src="{{image}}" alt="" />
-          {% endfor %}
         </div>
       </div><!-- end row -->
     </div><!-- end container -->
@@ -59,25 +56,20 @@ layout: default
   <div class="section no-padding-top">
 			<div class="container">
 				<div class="row">
-          {% if page.project-image %}
-					<div class="col-12 col-md-6">
-						<img class="img-responsive" src="{{ page.project-image }}" alt="{{page.title}} image">
-					</div>
-          {% endif %}
-          {% if page.project-image-2 %}
-					<div class="col-12 col-md-6">
-						<img src="{{ page.project-image-2 }}" alt="{{page.title}} image 2">
-					</div>
-          {% endif %}
-          {% if page.project-image-3 %}
-					<div class="col-12 col-md-6">
-						<img src="{{ page.project-image-3 }}" alt="{{page.title}} image 3">
-					</div>
-          {% endif %}
-          {% if page.project-image-4 %}
-					<div class="col-12 col-md-6">
-						<img src="{{ page.project-image-4 }}" alt="{{page.title}} image 4">
-					</div>
+          {% if page.gallery %}
+            {% for image in page.gallery.galleryImages %}
+              {% if forloop.first == true %}
+                <div class="col-12">
+                  {% assign image-src = image.image | split: "/" %}
+                  <img class="img-responsive" src="/assets/images/resize/project-crop/{{ image-src.last }}" alt="{{page.title}} image"/>
+                </div>
+              {% else %}
+                <div class="col-12 col-md-6">
+                  {% assign image-src = image.image | split: "/" %}
+                  <img class="img-responsive" src="/assets/images/resize/project-crop/{{ image-src.last }}" alt="{{page.title}} image"/>
+                </div>
+              {% endif %}
+            {% endfor %}
           {% endif %}
 				</div><!-- end row -->
 			</div><!-- end container -->
