@@ -81,7 +81,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "job"
     label: "Post Job Vacancy"
     folder: "_jobs"
-    sort: "closing-date:dsc"
+    sort: "title:asc"
     create: true
     identifier_field: title
     slug: "{{slug}}"
