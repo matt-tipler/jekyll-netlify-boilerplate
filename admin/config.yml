@@ -81,7 +81,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "job"
     label: "Post Job Vacancy"
     folder: "_jobs"
-    sort: "closing-date:asc"
+    sort: "closing-date:dsc"
     create: true
     identifier_field: title
     slug: "{{slug}}"
@@ -97,7 +97,7 @@ collections: # A list of collections the CMS should be able to edit
         name: requirments
         widget: list
         fields:
-          - { label: Image, name: image, widget: image }
+          - {label: "Requirment", name: "requirment", widget: "string"}
 
     # Projects
   - name: "projects"
