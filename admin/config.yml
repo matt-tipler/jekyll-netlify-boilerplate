@@ -85,9 +85,6 @@ collections: # A list of collections the CMS should be able to edit
     create: true
     identifier_field: project-name
     slug: "{{slug}}"
-    media_library:
-      config:
-        multiple: true
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "project" }
       - { label: "Project name", name: "project-name", widget: "string" }
@@ -134,3 +131,11 @@ collections: # A list of collections the CMS should be able to edit
         media_library:
           config:
             multiple: true
+
+  - name: gallery
+    label: "Gallery Image" # Used in the UI, ie.: "New Post"
+    folder: "site/content/gallery" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Gallery Image", name: "image", widget: "image"}
