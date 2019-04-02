@@ -32,6 +32,7 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Phill", value: "phill" }
           - { label: "Rob", value: "rob" }
           - { label: "Tom", value: "tom" }
+          - { label: "Sean", value: "sean" }
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:SS"}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
