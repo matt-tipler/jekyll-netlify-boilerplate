@@ -9,6 +9,5 @@ requirments:
   - requirment: SEO
   - requirment: jQuery
   - requirment: Typescript
-  - requirment: Tea making
 ---
 
