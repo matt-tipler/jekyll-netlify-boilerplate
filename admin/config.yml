@@ -86,7 +86,7 @@ collections: # A list of collections the CMS should be able to edit
     identifier_field: title
     slug: "{{slug}}"
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "recruit"}
       - {label: "Job Title", name: "title", widget: "string"}
       - {label: "Role", name: "role", widget: "string"}
       - {label: "Details", name: "details", widget: "text"}
@@ -97,7 +97,7 @@ collections: # A list of collections the CMS should be able to edit
         name: requirments
         widget: list
         fields:
-          - {label: "Requirment", name: "requirment", widget: "string"}
+          - {label: "Requirment", name: "requirment", widget: "string", required: false}
 
     # Projects
   - name: "projects"
