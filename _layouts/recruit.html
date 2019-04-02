@@ -8,9 +8,11 @@ layout: default
     </div><!-- end container -->
 </div>
 
+
 <div class="section-xs bg-grey-lightest ">
         <div class="container">
             <div class="row col-spacing-40">
+                {% if site.jobs > 1 %}
                 {% for job in site.jobs %}
                 <div class="col-12 col-lg-6">
                     <div class="bg-white border-radius padding-30 box-shadow-with-hover">
@@ -43,6 +45,11 @@ layout: default
                     </div>
                 </div>
                 {% endfor %}
+                {% else %}
+                    <div class="container section-xs">
+                        <h4 class="font-weight-thin">We’re not looking for anyone in particular at the moment, but feel free to get in touch and let us know what you can do.</h4>
+                    </div><!-- end container -->
+                {% endif %}
             </div><!-- end row -->
         </div><!-- end container -->
     </div>

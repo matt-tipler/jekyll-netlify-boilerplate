@@ -88,20 +88,43 @@ mini_magick:
     source: assets/images/
     destination: assets/images/resize/thumbnail
     resize: "100x100"
+    
   blogcrop:
     source: assets/images/
     destination: assets/images/resize/blog-crop
     resize: "550x367^"
     gravity: "center"
     extent: "550x367"
+    
   projectcrop:
     source: assets/images/
     destination: assets/images/resize/project-crop
     resize: "1100"
+
   projectthumbnail:
     source: assets/images/
     destination: assets/images/resize/project-thumbnail
     resize: "400"
+
+  xsimageresize:
+    source: assets/images/
+    destination: assets/images/resize/xs-image
+    resize: "200"
+
+  smimageresize:
+    source: assets/images/
+    destination: assets/images/resize/sm-image
+    resize: "400"
+
+  mdimageresize:
+    source: assets/images/
+    destination: assets/images/resize/md-image
+    resize: "700"
+
+  lgimageresize:
+    source: assets/images/
+    destination: assets/images/resize/lg-image
+    resize: "1100"
 
 
 #include:

@@ -1,0 +1,67 @@
+---
+layout: default
+---
+<div class="section-lg">
+        <div class="container">
+          <h1 class="font-weight-normal">{{ page.title }}</span></h1>
+          <h4 class="font-weight-thin">{{ page.intro_paragraph }}</h4>
+        </div><!-- end container -->
+</div>
+<!-- Features section -->
+<div class="section-sm bg-grey">
+    <div class="container">
+        <div class="row text-center">
+            {% for service in page.services %}
+                <div class="col-12 col-sm-4 col-lg-2 icon-3xl">
+                    <i class="{{service.icon}} text-dark"></i>
+                    <h6 class="font-weight-normal margin-top-20">{{service.text}}</h6>
+                </div>
+            {% endfor %}
+        </div><!-- end row -->
+    </div><!-- end container -->
+</div>
+<!-- end Features section -->
+
+<!-- section -->
+<div class="section bg-grey-lightest">
+    <div class="container">
+        {% for service-section in page.service-sections %}
+            {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+            {% if thecycle == 'odd' %}
+                <!-- box right -->
+                <div class="row align-items-center {% if forloop.first == false %}margin-top-50{% endif %} col-spacing-50">
+                    <div class="col-12 col-md-6">
+                        <img src="{{service-section.image}}" alt="{{service-section.heading}} | {{service-section.title}}">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h6 class="heading-uppercase">{{service-section.heading}}</h6>
+                        <h4>{{service-section.title}}</h4>
+                        {{service-section.body}}
+                    </div>
+                </div>
+            {% else %}
+                <!-- box left -->
+                <div class="row align-items-center col-spacing-50 margin-top-50 text-md-right">
+                    <div class="col-12 col-md-6 order-md-2">
+                        <img src="{{service-section.image}}" alt="{{service-section.heading}} | {{service-section.title}}">
+                    </div>
+                    <div class="col-12 col-md-6 order-md-1">
+                        <h6 class="heading-uppercase">{{service-section.heading}}</h6>
+                        <h4>{{service-section.title}}</h4>
+                        {{service-section.body}}
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+
+    </div><!-- end container -->
+</div>
+<!-- end section -->
+
+<div class="section-xs">
+        <div class="container">
+          <h3 class="">and everything else...</h3>
+        </div><!-- end containr -->
+</div>
+{% include services-section.html services=site.data.services %}
+

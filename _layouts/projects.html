@@ -13,7 +13,8 @@ layout: default
 <!-- project Posts -->
 <div class="section section-xs bg-grey-lightest">
     <div class="container">
-      <div class="blog-masonry blog-column-3"><!-- 'blog-column-1' to 'blog-column-6' -->
+      <div class="blog-masonry blog-column-3">
+      {% if site.projects > 1%}
       {% for project in site.projects %}
       {% assign author = site.data.authors[post.author] %}
         <!-- project Post box -->
@@ -35,6 +36,11 @@ layout: default
         </div>
       <!-- end Blog Posts -->
       {% endfor %}
+      {% else %}
+        <div class="container">
+            <h4 class="font-weight-thin">Nothing cool to show you at the moment.</h4>
+        </div><!-- end container -->
+      {% endif %}
 </div><!-- end blog-masonry -->
 </div><!-- end container -->
 </div>
