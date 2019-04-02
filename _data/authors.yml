@@ -3,7 +3,6 @@
 Matt:
     name: Matt Tipler
     email: m.tipler@htempest.co.uk
-    web: http://twitter.com/johndoe
     github-image: 1926708
     image: 
     bio: Just a designer that can code, basically I make the clever stuff look good.
@@ -11,7 +10,14 @@ Matt:
 Mike:
     name: Mike Trebilcock
     email: m.trebilcock@htempest.co.uk
-    web: http://twitter.com/johndoe
     github-image: 1905325
     image: 
     bio: Software and development wizard and master of agile.
+
+jacob:
+    name: Jacob Lynham
+    email: j.lynham@htempest.co.uk
+    github-image: 10013572
+    image: 
+    bio: Love's all things Dev and all things space. Has more monitors than a room full of day traders.
+
