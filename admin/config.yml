@@ -51,6 +51,21 @@ collections: # A list of collections the CMS should be able to edit
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Permalink", name: "permalink", widget: "hidden", required: false }
+      # - {label: "Section", name: "section", widget: "hidden", default: "{{name}}"}
+      - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
+      # - {label: "Body", name: "body", widget: "markdown", required: false}
+
+    # home page
+  - name: "home"
+    label: "Home"
+    folder: "pages"
+    sort: "title:asc"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "About section text", name: "about-text", widget: "markdown", required: false}
       - {label: "About section title", name: "about-title", widget: "string", required: false}
       - {label: "About link", name: "about-link", widget: "string", required: false}
@@ -88,7 +103,6 @@ collections: # A list of collections the CMS should be able to edit
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "recruit"}
       - {label: "Job Title", name: "title", widget: "string"}
-      - {label: "Role", name: "role", widget: "string"}
       - {label: "Details", name: "details", widget: "text"}
       - {label: "How to apply", name: "how-to-apply", widget: "text"}
       - {label: "Closing date", name: "closing-date", widget: "datetime", format: "YYYY-MM-DD HH:MM:SS", required: false}

@@ -7,7 +7,7 @@
 					</div>
 					<div class="col-12 col-md-6">
 						<h2>{{ page.about-title }} {{site.title}}</h2>
-						<p>{{ page.about-text }}</p>
+						<p>{{ page.about-text | replace: '!SITE_TITLE!', site.title }}</p>
 						<a class="text-btn-3 margin-top-30" href="{{ page.about-link }}">{{ page.about-link-text }}</a>
 					</div>
 				</div><!-- end row -->

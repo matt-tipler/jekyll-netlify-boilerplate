@@ -7,7 +7,12 @@
 					<div class="col-12 col-md-4 icon-5xl">
 						<i class="{{item.icon}} text-dark"></i>
 						<h5 class="font-weight-normal margin-top-20">{{item.title}}</h5>
-						<p>{{item.text}}</p>
+						{% if item.list %}
+						<ul>
+							{% for service in item.list %}
+								<li>{{service}}</li>
+							{% endfor %}
+						{% endif %}
                     </div>
                     {% endfor %}
                 </div><!-- end row -->

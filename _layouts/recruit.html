@@ -8,31 +8,50 @@ layout: default
     </div><!-- end container -->
 </div>
 
-<div class="section-lg bg-grey-lightest no-padding-top">
+<div class="section-xs bg-grey-lightest ">
         <div class="container">
             <div class="row col-spacing-40">
                 {% for job in site.jobs %}
                 <div class="col-12 col-lg-6">
                     <div class="bg-white border-radius padding-30 box-shadow-with-hover">
-                        <h5 class="font-weight-normal">{{job.title }}</h5>
+                        <h5 class="font-weight-normal no-margin">{{ job.title | capitalize }}</h5>
+                        {% if job.closing-date %}
+                        <small>Closing Date: {{ job.closing-date | date: "%A, %B %d, %Y" }}</small>
+                        {% endif %}
                         <div class="divider-width-30px">
                             <hr class="bg-black-05">
                         </div>
-                        {{job.description}}
+                        {{job.details}}
                         <div class="margin-top-20">
                             <h6 class="heading-uppercase">Requirements:</h6>
                             <ul class="list-dash">
-                                {% for requirement in job.requirements %}
-                                    <li>{{requirement}}</li>
+                                {% for requirment in job.requirments %}
+                                    <li>{{requirment}}</li>
                                 {% endfor %}
                             </ul>
                         </div>
-                        <div class="text-right margin-top-20">
-                            <a class="text-btn button-font-2" href="#">Apply Now</a>
+                        <div class="divider-width-30px">
+                                <hr class="bg-black-05">
+                            </div>
+                        <div class="margin-top-20">
+                            <h6 class="heading-uppercase">How to Apply:</h6>
+                            {{job.how-to-apply}}
                         </div>
+                        <!-- <div class="text-right margin-top-20">
+                            <a class="text-btn button-font-2" href="#">Apply Now</a>
+                        </div> -->
                     </div>
                 </div>
                 {% endfor %}
             </div><!-- end row -->
         </div><!-- end container -->
     </div>
+
+    <div class="bg-image parallax" style="background-image: url(../../assets/images/sand-and-sea.jpg)">
+        <div class="bg-white-07">
+          <div class="section-lg text-center">
+            <h2 class="font-weight-light">Don't see the right role for you? get in touch and let us know what you could offer...</h2>
+            <a class="button button-xl button-border-1px button-reveal-left-outline-dark button-rounded margin-top-20" href="/contact"><i class="ti-email"></i><span>Contact {{site.title}}</span></a>
+          </div>
+        </div>
+      </div>

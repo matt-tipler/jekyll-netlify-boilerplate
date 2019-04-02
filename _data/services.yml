@@ -2,26 +2,42 @@
 # you can add .yml files for any other global data in this folder
 
 
-- title: Software Development
+- title: Development Services
   icon: ti-settings
-  text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+  list: 
+    - Software Development
+    - Bespoke Business Applications
+    - Web Application Development
+    - Mobile App Development
+    - Bespoke CRM Systems
+    - Bespoke CMS Systems
+    - Customer Portal Software
+    - Hardware Integration
+    - Machine learning &amp; AI
+    - Realtime software
 
-- title: Software Design
+- title: Creative Services
   icon: ti-ruler-pencil
-  text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+  list:
+    - UI and UX Services
+    - Front-end Design &amp; Development
+    - Photography
+    - Video Production
+    - Digital Marketing &amp; SEO
+    - Aerial Video &amp; Photography
+    - Email marketing
+    - eCommerce
+    - Social media
+    - Print Design
 
-- title: Server Management
+
+- title: Server Management &amp; DevOps
   icon: ti-dashboard
-  text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-
-- title: Photography
-  icon: ti-camera
-  text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-
-- title: Consultancy
-  icon: ti-settings
-  text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-
-- title: Cyber Security
-  icon: ti-lock
-  text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+  list:
+    - Data Migration
+    - Operational Systems
+    - Legacy Software Modernisation
+    - Data Recovery
+    - Cyber Security
+    - Secure Global Hosting
+    - Cloud Migration

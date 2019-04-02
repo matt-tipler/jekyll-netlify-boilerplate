@@ -11,7 +11,7 @@ layout: default
 {{ content }}
 
 <!-- project Posts -->
-<div class="section">
+<div class="section section-xs bg-grey-lightest">
     <div class="container">
       <div class="blog-masonry blog-column-3"><!-- 'blog-column-1' to 'blog-column-6' -->
       {% for project in site.projects %}
@@ -37,4 +37,13 @@ layout: default
       {% endfor %}
 </div><!-- end blog-masonry -->
 </div><!-- end container -->
+</div>
+
+<div class="bg-image parallax" style="background-image: url(../../assets/images/parallax-contact.jpg)">
+  <div class="bg-white-07">
+    <div class="section-lg text-center">
+      <h2 class="font-weight-light">Think we can help with your next project?</h2>
+      <a class="button button-xl button-border-1px button-reveal-left-outline-dark button-rounded margin-top-20" href="/contact"><i class="ti-email"></i><span>Get in touch</span></a>
+    </div>
+  </div>
 </div>

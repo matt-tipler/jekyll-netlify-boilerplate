@@ -3,7 +3,8 @@
 			<div class="container">
 				<div class="section-title text-center">
 					<h2>Meet Our Team</h2>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+					<p>Our creative team, all experts in their chosen fields, will use their extensive knowledge, insight and the latest advances in technology to deliver the required results and impact for your project.</p>
+					<!-- <p>Our mission is simple, to provide a quality service that delivers commercially effectual solutions and promote positive growth for our customers.</p> -->
 				</div>
 				<div class="row team-wrapper team-box-hover-3">
 					{% for team-member in include.team %}
@@ -11,13 +12,13 @@
 						<div class="team-img">
 							<img src="{{team-member.image}}" alt="{{team-member.name}} | {{team-member.role}}">
 							<!-- social links -->
-							<div>
+							<!-- <div>
 								<ul>
 									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
 									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
 									<li><a href="#"><i class="fab fa-pinterest"></i></a></li>
 								</ul>
-							</div>
+							</div> -->
 						</div>
 						<h6 class="font-weight-normal no-margin">{{team-member.name}}</h6>
 						<span>{{team-member.role}}</span>
