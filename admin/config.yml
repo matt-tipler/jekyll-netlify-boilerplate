@@ -96,8 +96,9 @@ collections: # A list of collections the CMS should be able to edit
       - label: Requirments
         name: requirments
         widget: list
+        required: false
         fields:
-          - {label: "Requirment", name: "requirment", widget: "string", required: false}
+          - {label: "Requirment", name: "requirment", widget: "string", }
 
     # Projects
   - name: "projects"
