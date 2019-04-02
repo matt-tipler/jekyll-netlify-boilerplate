@@ -3,6 +3,12 @@ layout: post
 title: Cloud Firestore Backups
 author: jacob
 date: '2019-04-02 13:04:50'
+intro_paragraph: >-
+  We are working on an internal PWA that makes use of Cloud Firestore to store
+  data. We have a test and production database. We use the test DB for our
+  development build, and for testing datamodel transformations. At the time of
+  writing, the app hasn't been deployed to production and we've been waiting for
+  firestore to provide a backup solution.
 categories: development
 image: /assets/images/desk-and-mac.jpg
 ---
