@@ -12,6 +12,7 @@ about-link: /team
 about-link-text: Learn more
 permalink: /
 team-title: Our team
-team-text: 'This is our amazing team, each member is awesome in their own unique way!'
+team-text: 'This is our amazing team, each member is awesome in their own unique way!'\
+
 ---
 
