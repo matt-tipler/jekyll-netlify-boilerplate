@@ -11180,3 +11180,10 @@ div[class*=' bg-black'].sidebar-nav-content .sidebar-bottom {
   -webkit-transform: scale(1.02);
   transform: scale(1.02);
 }
+
+@media(max-width:500px){
+  h1.display-4{
+    font-size:30px;
+    line-height: 120%;
+  }
+}
