@@ -146,22 +146,18 @@ collections: # A list of collections the CMS should be able to edit
           # - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
           # - {label: "Body", name: "body", widget: "markdown", required: false}
 
-  - label: "Our Services"
-    name: "our-services"
-    files:
       - label: "Services"
         name: "services"
         file: "_data/services.yml"
         fields:
-          - label: Services
+          - label: services
             name: services
             widget: list
-            required: false
-            fields: 
+            fields:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Icon", name: "icon", widget: "string"}
               - label: Service List
                 name: list
                 widget: list
                 fields:
-                  - { label: Service, name: service, widget: image }
+                  - { label: Service, name: service, widget: string }
