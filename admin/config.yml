@@ -146,7 +146,10 @@ collections: # A list of collections the CMS should be able to edit
           # - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
           # - {label: "Body", name: "body", widget: "markdown", required: false}
 
-      - label: "Services"
+  - label: "Global Site Content"
+    name: "global"
+    files:
+      - label: "Our Services"
         name: "services"
         file: "_data/services.yml"
         fields:
