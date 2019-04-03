@@ -67,7 +67,6 @@ defaults:
 markdown: kramdown
 
 collections:
-  home:
   team:
   jobs:
   projects:
