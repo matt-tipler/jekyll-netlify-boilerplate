@@ -39,7 +39,7 @@ After this incident, we looked at a way to automate backups from the Cloud Fires
 ## 1.2. Setting up the Storage Bucket
 For this, I'm assuming that you already have a project set up. Go to the [storage page](https://console.cloud.google.com/storage/browser), and click "create bucket".
 
-![Creating a storage bucket](https://i.imgur.com/kuT8rdA.png)
+![Creating a storage bucket](/assets/images/jb-blog-1.png)
 
 These are the settings we go for. Coldline is a slower but cheaper storage solution when storing large amounts of data with very little interaction, making it perfect for backups. It costs more than usual to download the data back form the server, so if you think your team may make a blunder on a frequent basis, it may be worth going for a different storage type.
 
@@ -50,14 +50,14 @@ Once this is created, you're ready to export your database to this empty bucket!
 Go to the [Google SDK Docs](https://cloud.google.com/sdk/) and download the installer. Install it, and you should see a console pop up, that asks if you want to log in. Enter `Y` and a new tab will open up in your browser so that it can access your Google Account.
 
 Next, we select the project we want to interact with:
-![Select the project](https://i.imgur.com/Rq7Ojfy.png)
+![Select the project](/assets/images/jb-blog-2.png)
 
 Side-note: If you have already selected a project, you can use the command `gcloud projects list` to list all projects by ID, and then you use `gcloud config set project {PROJECT_ID}` to switch.
 
 ## 1.4. The Juicy Part
 I have created a dummy Cloud Firestore to play around with. In it, are 2 collection, each with 2 documents, all of which have a `modified` field set to `false`.
 
-![A Cloud Firestore database](https://i.imgur.com/PMcThXf.png)
+![A Cloud Firestore database](/assets/images/jb-blog-3.png)
 
 In order to backup this Firestore, we need to grab the name for the Storage Bucket that we created earlier. In my case, it is `jacob-firestore-backup`.
 
@@ -67,17 +67,16 @@ To backup this database, we need to run the command:
 
 So, in my case, I would run `gcloud datastore export gs://jacob-firestore-backup`:
 
-![Backup Command](https://i.imgur.com/Jxo85wA.png)
+![Backup Command](/assets/images/jb-blog-4.png)
 
 The `outputUrlPrefix` is the path of the newly-created backup in your Bucket. It can now be found in your bucket (may need to refresh)
 
-![Storage Bucket after exporting](https://i.imgur.com/sMlgzJx.png)
+![Storage Bucket after exporting](/assets/images/jb-blog-5.png)
 
 
 ## 1.5. Restoring a backup
 For the sake of demonstration, I have modified one of the documents from each collection (changed `modified` from `false` to `true`):
-![collection-1 after backup, before restore](https://i.imgur.com/fX8p2tl.png)
-![collection-2 after backup, before restore](https://i.imgur.com/0Y5HzQk.png)
+![collection-1 after backup, before restore](/assets/images/jb-blog-6.png)
 
 The command to restore a backup is:
 
@@ -87,11 +86,10 @@ So in my case, I would run:
 
     gcloud datastore import gs://jacob-firestore-backup/2019-03-26T10:36:30_23730/2019-03-26T10:36:30_23730.overall_export_metadata
 
-![Restored](https://i.imgur.com/8rSQ0B5.png)
+![Restored](/assets/images/jb-blog-7.png)
 
 And now if I look in the Firestore, it looks like this (back to how it was before):
-![collection-1 after restore](https://i.imgur.com/TFdR76v.png)
-![collection-2 after restore](https://i.imgur.com/oeHDAtB.png)
+![collection-1 after restore](/assets/images/jb-blog-8.png)
 
 # 2. The Jargon
 

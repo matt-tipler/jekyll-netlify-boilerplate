@@ -1,46 +1,24 @@
-		<!-- Team section -->
-		<div class="section">
-			<div class="container">
-				<div class="section-title text-center">
-					<h2>Meet Our Team</h2>
-					<p>Our creative team, all experts in their chosen fields, will use their extensive knowledge, insight and the latest advances in technology to deliver the required results and impact for your project.</p>
-					<!-- <p>Our mission is simple, to provide a quality service that delivers commercially effectual solutions and promote positive growth for our customers.</p> -->
-				</div>
-				<div class="row team-wrapper team-box-hover-3">
-					{% for team-member in include.team %}
-					<div class="col-12 col-md-6 col-lg-3 team-box">
-						<div class="team-img">
-							<img src="{{team-member.image}}" alt="{{team-member.name}} | {{team-member.role}}">
-							<!-- social links -->
-							<!-- <div>
-								<ul>
-									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-								</ul>
-							</div> -->
-						</div>
-						<h6 class="font-weight-normal no-margin">{{team-member.name}}</h6>
-						<span>{{team-member.role}}</span>
-					</div>
-					{% endfor %}
-				</div><!-- end row -->
-			</div><!-- end container -->
+<!-- Team section -->
+<div class="section">
+	<div class="container">
+		<div class="section-title text-center">
+			<h2>Meet Our Team</h2>
+			<p>Our creative team, all experts in their chosen fields, will use their extensive knowledge, insight and the latest advances in technology to deliver the required results and impact for your project.</p>
+			<!-- <p>Our mission is simple, to provide a quality service that delivers commercially effectual solutions and promote positive growth for our customers.</p> -->
 		</div>
-		<!-- end Team section -->
-<!-- 
-		{% for post in site.posts %}
-		{% assign author = site.data.authors[post.author] %}
-		  <li>
-			<h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-			<time datetime="{{ post.date }}">
-			  <small>
-				<strong>{{ post.date | date_to_string }}</strong>
-				{% if author %}
-				  by {{ author.name }}
+		<div class="row team-wrapper team-box-hover-3">
+			{% for team-member in include.team %}
+			<div class="col-12 col-md-6 col-lg-3 team-box">
+				{% if team-member.image %}
+				<div class="team-img">
+					<img src="{{team-member.image}}" alt="{{team-member.name}} | {{team-member.role}}">
+				</div>
 				{% endif %}
-			  </small>
-			</time>
-			{{ post.excerpt | strip_newlines | truncate: 180 }}
-		  </li>
-		{% endfor %} -->
+				<h6 class="font-weight-normal no-margin">{{team-member.name}}</h6>
+				<span>{{team-member.role}}</span>
+			</div>
+			{% endfor %}
+		</div><!-- end row -->
+	</div><!-- end container -->
+</div>
+<!-- end Team section -->

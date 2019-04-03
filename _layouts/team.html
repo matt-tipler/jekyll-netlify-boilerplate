@@ -27,11 +27,4 @@ layout: default
 
 </section>
 
-<div class="bg-image parallax" style="background-image: url(../../assets/images/our-building.jpg)">
-  <div class="bg-white-07">
-    <div class="section-lg text-center">
-      <h2 class="font-weight-light">Love what you see? maybe you could join us.</h2>
-      <a class="button button-xl button-border-1px button-reveal-left-outline-dark button-rounded margin-top-20" href="/recruit"><i class="ti-email"></i><span>Work for {{site.title}}</span></a>
-    </div>
-  </div>
-</div>
+{% include full-width-with-button.html text="Love what you see? maybe you could join us." image="our-building.jpg" button-text="Work for FireBrand" button-link="/recruit" button-icon="ti-mouse-alt" %}

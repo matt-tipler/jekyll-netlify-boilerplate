@@ -1,6 +1,6 @@
 ---
-name: Darren Stone
-role: Ass. Manager
+name: Mike Trebilcock
+role: Manager
 # image: /assets/images/col-3-square.jpg
 ---
 
