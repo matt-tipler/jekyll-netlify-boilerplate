@@ -1,20 +1,19 @@
-# specify site authors in this file
-# you can add .yml files for any other global data in this folder
-Matt:
+services:
+  - Matt:
     name: Matt Tipler
     email: m.tipler@htempest.co.uk
     github-image: 1926708
     image: 
     bio: Just a designer that can code, basically I make the clever stuff look good.
 
-Mike:
+  - Mike:
     name: Mike Trebilcock
     email: m.trebilcock@htempest.co.uk
     github-image: 1905325
     image: 
     bio: Software and development wizard and master of agile.
 
-jacob:
+  - jacob:
     name: Jacob Lynham
     email: j.lynham@htempest.co.uk
     github-image: 10013572
