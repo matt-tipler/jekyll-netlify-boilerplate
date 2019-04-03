@@ -150,7 +150,7 @@ collections: # A list of collections the CMS should be able to edit
     name: "global"
     files:
       - label: "Our Services"
-        name: "services"
+        name: "our-services"
         file: "_data/services.yml"
         fields:
           - label: services
@@ -164,3 +164,17 @@ collections: # A list of collections the CMS should be able to edit
                 widget: list
                 fields:
                   - { label: Service, name: service, widget: string }
+
+      - label: "Authors"
+        name: "authors"
+        file: "_data/authors.yml"
+        fields:
+          - label: Authors
+            name: authors
+            widget: list
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Email", name: "email", widget: "string"}
+              - {label: "Github User ID", name: "github-image", widget: "string"}
+              - {label: "Bio", name: "bio", widget: "markdown"}
+
