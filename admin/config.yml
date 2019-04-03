@@ -60,7 +60,7 @@ collections: # A list of collections the CMS should be able to edit
     # home page
   - name: "home"
     label: "Home"
-    folder: "_home"
+    folder: "pages"
     sort: "title:asc"
     create: false
     slug: "{{slug}}"
