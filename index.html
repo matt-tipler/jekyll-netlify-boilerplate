@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+{% include scroll-to-top.html %}
+{% include home-section.html %}
+
+{% include about-section.html %}
+{% include services-section.html services=site.data.services %}
+{% include latest-projects.html projects=site.projects %}
+{% include latest-blogs.html posts=site.posts%}
+{% include contact-section.html %}
+
+{{ content }}
+
