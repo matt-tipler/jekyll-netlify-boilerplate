@@ -126,7 +126,7 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - { label: Image, name: image, widget: image }
 
-  - label: "Pages"
+  - label: "Home Page"
     name: "home"
     files:
       - label: "Home Page"
@@ -140,8 +140,28 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "About link", name: "about-link", widget: "string", required: false}
           - {label: "About link text", name: "about-link-text", widget: "string", required: false}
           - {label: "Permalink", name: "permalink", widget: "hidden", required: false }
-          - {label: "Team section title", name: "team-title", widget: "string", required: false}
-          - {label: "Team section text", name: "team-text", widget: "markdown", required: false}
+          # - {label: "Team section title", name: "team-title", widget: "string", required: false}
+          # - {label: "Team section text", name: "team-text", widget: "markdown", required: false}
           # - {label: "Section", name: "section", widget: "hidden", default: "{{name}}"}
           # - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
           # - {label: "Body", name: "body", widget: "markdown", required: false}
+
+  - label: "Our Services"
+    name: "our-services"
+    files:
+      - label: "Services"
+        name: "services"
+        file: "_data/services.yml"
+        fields:
+          - label: Services
+            name: services
+            widget: list
+            required: false
+            fields: 
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Icon", name: "icon", widget: "string"}
+              - label: Service
+                name: service
+                widget: list
+                fields:
+                  - { label: Service, name: service, widget: image }
